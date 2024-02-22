@@ -47,6 +47,7 @@ class MasterViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     candies = Candy.candies()
+    print("Kevin is awesome")
     
     // 1
     searchController.searchResultsUpdater = self
