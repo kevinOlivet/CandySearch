@@ -40,7 +40,13 @@ class DetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    let appearance = UINavigationBarAppearance()
+    appearance.titleTextAttributes = [.foregroundColor: UIColor.red]
+    appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.red]
     
+    navigationItem.standardAppearance = appearance
+    navigationItem.scrollEdgeAppearance = appearance
+
     configureView()
   }
   
