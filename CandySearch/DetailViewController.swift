@@ -54,9 +54,9 @@ class DetailViewController: UIViewController {
     if let candy = candy,
       let detailDescriptionLabel = detailDescriptionLabel,
       let candyImageView = candyImageView {
-      detailDescriptionLabel.text = candy.name
+      detailDescriptionLabel.text = candy.category.rawValue
       candyImageView.image = UIImage(named: candy.name)
-      title = candy.category.rawValue
+      title = candy.name
     }
   }
 }
